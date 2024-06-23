@@ -1,0 +1,11 @@
+zRes_: Los primeros preprocesados que se hicieron, no tienen la etiqueta [image] ni los emails eliminados
+zPostProc_: los segundos postprocesados que se hicieron, a partir de los zRes_
+OtherFroms: dataset que contiene los emails de los usuarios maliciosos
+Froms_4+Otrs, zFroms+Otrs: dataset de emails de users originarios del dataset más los insiders
+zIdMails_1: Id de los mensajes de ususarios tanto insiders (incluso los externos) como los que no. 
+stW_: Los primeros postprocesados que se hicieron. Contienen urls, html, etc. Algunos interfirieron con el procesado y salieron vacíos.
+carpetas_2: listado completo de todas las carpetsa que puede tener un usuario.
+zBrut_: son todos los datos en bruto de cada usuario, antes de hacer procesado, excepto poner todo a lowercase. De insiders + extras y no insiders.
+zMidProc_: Es el preprocesado de HTML, URL, emails, fechas, horas, [image], digitos, símbolos y puntuación.
+zTruPostProc_: Tras hacer stemming y stopwords de zMidProc_ sale esto.
+zOversampledX1_: es lo que sale al duplicar las lineas de cada insider del zTruPostProc_2
