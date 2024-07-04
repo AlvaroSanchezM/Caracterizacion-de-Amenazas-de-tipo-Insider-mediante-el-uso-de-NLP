@@ -27,6 +27,9 @@ Se pueden obtener las bases de datos en los siguientes vínculos:
   -  CERT: https://kilthub.cmu.edu/articles/dataset/Insider_Threat_Test_Dataset/12841247/1
            Lindauer, Brian (2020). Insider Threat Test Dataset. Carnegie Mellon University. Dataset. https://doi.org/10.1184/R1/12841247.v1
 
+Se obtuvieron los insiders de ENRON del código contenido en el github de Jaycode, y sus nombres de usuario coinciden con los nombres de los imputados en el caso ENRON.
+https://github.com/jaycode/identify-enron-frauds/blob/master/final_project/poi_email_addresses.py
+
 
 Sobre el programa:
   - Está diseñado para ejecutar en Windows. Para ejecutar en linux hay que ir programa a programa cambiando las '\\' por '/'.
