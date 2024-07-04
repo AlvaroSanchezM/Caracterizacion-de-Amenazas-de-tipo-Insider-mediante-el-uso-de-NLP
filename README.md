@@ -31,7 +31,7 @@ Se pueden obtener las bases de datos en los siguientes vínculos:
 Sobre el programa:
   - Está diseñado para ejecutar en Windows. Para ejecutar en linux hay que ir programa a programa cambiando las '\\' por '/'.
 
-  - Para ejecutar CERT:
+  Para ejecutar CERT:
   -     1º Introducir el contenido de r4.2 en la carpeta descomprimida de CERT r4.2
   -     2º Ejecutar los scripts que comienzan por read...NdSvUsr.py
   -     3º Ejecutar los scripts que comienzan por mount... .py
@@ -40,7 +40,7 @@ Sobre el programa:
   -     5º Ejecutar ML-postVect-grdSrchcv-chained.py Esto corre los 5 algoritmos sobre uno de los datasets. Se puede cambiar en el código cual se usa. Corre cada algoritmo, ajusta hiperparámetros, y corre 19 veces con diferentes 'random_state', sacando resultados. Al final, saca la media y la varianza de los resultados.
 
 
- - Para ejecutar ENRON:
+ Para ejecutar ENRON:
  -     1º Introducir el contenido de ENRON en una carpeta al mismo nivel que el archivo descomprimido enron_mail_20150507
  -     2º Ejecutar getEmailsFromUsersInDataset.py Esto dará un csv con los emails de cada usuario del dataset ENRON que coincida con la carpeta de usuario.
  -     4º Introducir manualmente los emails de los insiders. Solo hay 3 insiders que vienen con carpeta de usuario en el dataset: Skillig, Delainey y Lay, el resto no están incluidos. Se obtendrá un archivo igual al originEmailsPlusInsiders.csv 
