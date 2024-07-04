@@ -31,6 +31,26 @@ Se pueden obtener las bases de datos en los siguientes vínculos:
 Sobre el programa:
   - Está diseñado para ejecutar en Windows. Para ejecutar en linux hay que ir programa a programa cambiando las '\\' por '/'.
 
+  - Para ejecutar CERT:
+  -     1º Introducir el contenido de r4.2 en la carpeta descomprimida de CERT r4.2
+  -     2º Ejecutar los scripts que comienzan por read...NdSvUsr.py
+  -     3º Ejecutar los scripts que comienzan por mount... .py
+  -     3.5º Aquí se puede ejecutar el wordcloud, y se puede cambiar el programa para que coja joinedEmails_1.csv o joinedWebAccess.csv
+  -     4º Ejecutar los scripts que comienzan por ML-verct-... .py Esto da los archivos resultantes del vectorizado. Cada script saca 2 archivos, pero webLabels.csv y emailLabels.csv son equivalentes, porque solo indican quienes son los insiders.
+  -     5º Ejecutar ML-postVect-grdSrchcv-chained.py Esto corre los 5 algoritmos sobre uno de los datasets. Se puede cambiar en el código cual se usa. Corre cada algoritmo, ajusta hiperparámetros, y corre 19 veces con diferentes 'random_state', sacando resultados. Al final, saca la media y la varianza de los resultados.
+
+
+ - Para ejecutar ENRON:
+ -     1º Introducir el contenido de ENRON en una carpeta al mismo nivel que el archivo descomprimido enron_mail_20150507
+ -     2º Ejecutar getEmailsFromUsersInDataset.py Esto dará un csv con los emails de cada usuario del dataset ENRON que coincida con la carpeta de usuario.
+ -     4º Introducir manualmente los emails de los insiders. Solo hay 3 insiders que vienen con carpeta de usuario en el dataset: Skillig, Delainey y Lay, el resto no están incluidos. Se obtendrá un archivo igual al originEmailsPlusInsiders.csv 
+ -     3º Ejecutar getMailIdsPerUserInFile.py Esto sacará un csv con los Message-Id de cada email que haya escrito cada usuario, aunque esté en el inbox de un segundo usuario distinto.
+ -     4º Ejecutar getMailTxtPerUser.py Esto sacará un csv donde en cada línea estarán los campos: poi(1 si fue insider, 0 si no lo fue), user(identificado por el nombre de carpeta para los no insiders, y para los insiders que no aparecen en el dataset con carpeta propia, a ojo a partir de uno de sus correos), contenido(contenido de cada uno de sus correos electrónicos(Identificados por el Message-Id de la ejecución anterior).
+ -     5º Ejecutar stopwordAndStemmingPrepreocessing.py Este script hará un preprocesado de "lemmatization" primero, y eliminación de "stopwords" después, y sacará el resultado en un csv similar al anterior, con la cabecera: poi, user, content
+ -     5.5º Aquí es donde se ejecutaría el wordcloud para verificar que no se han quedado palabras raras o etiquetas en el corpus de emails
+ -     6º Se realiza el vectorizado, splitting de datos, training del algoritmo de ML y extracción de parámetros en este último paso, ejecutando 'v ML-tuning.py'. Se obtienen los mejores hiperparámetros  de cada algoritmo, pero para cambiar de algoritmo hay que cambiar manualmente el código de este archivo.
+ -     7º Para vect-train-test-MLpy para cambiar de algoritmo también hace falta un cambio manual del código en los sitios marcados con un comentario con XXXX. Este otro script no hace ajuste de hiperparámetros. En cambio se pueden introducir los parámetros calculados con el script del paso 6º.
+
 
 --Librerías para CERT:
 
