@@ -181,7 +181,7 @@ f1MedP = 0.0
 # print('TN:',TN)
 
 # Número de repeticiones XXXX
-n_repeats = 17
+n_repeats = 19
 
 # Inicialización de las métricas
 accuracy_list = []
