@@ -13,7 +13,7 @@ from winsound import Beep
 import os
 
 # Cargar los datos
-path = os.getcwd() + '\\'  # Ajusta el path según sea necesario
+path = os.getcwd() + '\\Outputs\\'  # Ajusta el path según sea necesario
 
 # X = pd.read_csv(path + 'vectorized_emailData.csv') # vectorized_emailData
 X = pd.read_csv(path + 'vectorized_emailData.csv') # vectorized_webData
