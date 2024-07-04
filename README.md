@@ -9,9 +9,9 @@ Título: Caracterización de Amenazas de tipo Insider mediante el uso de NLP
 
 Autor: Álvaro Sánchez Martínez
 
-Ponente: Luis Pérez Miguel
+Ponente: Xavier Larriva Novo
 
-Tutor: Xavier Larriva Novo
+Tutor: Luis Pérez Miguel
 
 Este es el código desarrollado para obtener los resultados del Trabajo de Fin de Grado (TFG) del mismo nombre.
 
