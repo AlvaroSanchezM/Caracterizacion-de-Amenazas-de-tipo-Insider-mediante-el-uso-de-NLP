@@ -27,3 +27,7 @@ Se pueden obtener las bases de datos en los siguientes vínculos:
   -  CERT: https://kilthub.cmu.edu/articles/dataset/Insider_Threat_Test_Dataset/12841247/1
            Lindauer, Brian (2020). Insider Threat Test Dataset. Carnegie Mellon University. Dataset. https://doi.org/10.1184/R1/12841247.v1
 
+
+Sobre el programa:
+  - Está diseñado para ejecutar en Windows. Para ejecutar en linux hay que ir programa a programa cambiando las '\\' por '/'.
+
