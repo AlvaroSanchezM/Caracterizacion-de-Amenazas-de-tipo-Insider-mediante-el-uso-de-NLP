@@ -16,8 +16,8 @@ Tutor: Luis Pérez Miguel
 Este es el código desarrollado para obtener los resultados del Trabajo de Fin de Grado (TFG) del mismo nombre.
 
 Se pueden encontrar 2 partes:
-  -  La parte que ejecuta sobre la base de datos de emails de ENRON
-  -  La parte que ejecuta sobre la base de datos de CERT
+  -  La parte que se ejecuta sobre la base de datos de emails de ENRON
+  -  La parte que se ejecuta sobre la base de datos de CERT
 
 Se pueden obtener las bases de datos en los siguientes vínculos:
 
@@ -31,7 +31,7 @@ Se obtuvieron los insiders de ENRON del código contenido en el github de Jaycod
 https://github.com/jaycode/identify-enron-frauds/blob/master/final_project/poi_email_addresses.py
 
 Sobre la arquitectura:
-  La imagen de la arquitectura del sistema incluye pasos con asteriscos (*). Eso significa que solo el programa para la ejecución sobre el dataset de ENRON sigue esos pasos o genera esos archivos.
+  La imagen de la arquitectura del sistema (Arquitectura-Sistema.png) incluye pasos con asteriscos (*). Eso significa que solo el programa para la ejecución sobre el dataset de ENRON sigue esos pasos o genera esos archivos.
 
 Sobre el programa:
   - Está diseñado para ejecutar en Windows. Para ejecutar en Linux hay que ir programa a programa cambiando las '\\' por '/'.
