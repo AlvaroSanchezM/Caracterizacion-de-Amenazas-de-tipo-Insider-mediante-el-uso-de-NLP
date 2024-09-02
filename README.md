@@ -37,7 +37,7 @@ Sobre el programa:
   - Está diseñado para ejecutar en Windows. Para ejecutar en Linux hay que ir programa a programa cambiando las '\\' por '/'.
 
   Para ejecutar CERT:
-  -    1º Introducir el contenido de r4.2 en la carpeta descomprimida de CERT r4.2
+  -    1º Introducir el contenido descomprimido del dataset r4.2 en la carpeta descomprimida del proyecto de CERT/4.2/
   -    2º Ejecutar los scripts que comienzan por read...NdSvUsr.py
   -    3º Ejecutar los scripts que comienzan por mount... .py
   -    3.5º Aquí se puede ejecutar el wordcloud, y se puede cambiar el programa para que coja joinedEmails_1.csv o joinedWebAccess.csv
