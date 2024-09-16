@@ -13,7 +13,7 @@ Ponente: Xavier Larriva Novo
 
 Tutor: Luis Pérez Miguel
 
-Este es el código desarrollado para obtener los resultados del Trabajo de Fin de Grado (TFG) del mismo nombre.
+Este es el código desarrollado para obtener los resultados del Trabajo de Fin de Grado (TFG) del mismo nombre. Se puede acceder al texto del Trabajo en https://oa.upm.es/83453/
 
 Se pueden encontrar 2 partes:
   -  La parte que se ejecuta sobre la base de datos de emails de ENRON
